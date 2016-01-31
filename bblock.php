@@ -37,7 +37,6 @@ class PlgSystemBblock extends JPlugin
 	{
 		$app = JFactory::getApplication();
 		$params = json_decode($config['params']);
-		var_dump($params);
 		if ($app->isAdmin()) {
 			if (empty( $params->admin) ) {
 				return;
