@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_bblock</name>
+	<author>Yair Lahav</author>
+	<creationDate>November 2015</creationDate>
+	<copyright>Copyright (C) 2015 Yair Lahav. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>yair@bonimba.co.il</authorEmail>
+	<authorUrl>www.bonimba.co.il</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_BBLOCK_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="bblock">bblock.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_bblock.ini</language>
+		<language tag="en-GB">en-GB.plg_system_bblock.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="admin" type="checkbox" label="PLG_SYSTEM_BBLOCK_ADMIN_LABEL" description="PLG_SYSTEM_BBLOCK_ADMIN_DESC" value="1" default="0"/>
+				<field name="site" type="checkbox" label="PLG_SYSTEM_BBLOCK_SITE_LABEL" description="PLG_SYSTEM_BBLOCK_SITE_DESC" value="1" default="1" />
+				<field name="enable_code_list" type="text" size="100" default="" label="PLG_SYSTEM_BBLOCK_ENABLE_CODES_LIST_LABEL"
+					   description="PLG_SYSTEM_BBLOCK_ENABLE_CODES_LIST_DESC" />
+				<field name="disable_code_list" type="text" size="100" default="" label="PLG_SYSTEM_BBLOCK_DISABLE_CODES_LIST_LABEL"
+					   description="PLG_SYSTEM_BBLOCK_DISABLE_CODES_LIST_DESC" />
+				<field name="action_type" type="radio" default="0" label="PLG_SYSTEM_BBLOCK_ACTION_SELECT_LABEL" description="PLG_SYSTEM_BBLOCK_ACTION_SELECT_DESC">
+					<option value="0">PLG_SYSTEM_BBLOCK_ACTION_SELECT_DIE</option>
+					<option value="1">PLG_SYSTEM_BBLOCK_ACTION_SELECT_REDIRECT</option>
+				</field>
+				<field name="redirect_url" type="url" size="50" default="" label="PLG_SYSTEM_BBLOCK_REDIRECT_URL_LABEL"
+					   description="PLG_SYSTEM_BBLOCK_REDIRECT_URL_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
